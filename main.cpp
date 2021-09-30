@@ -20,5 +20,10 @@ int main(){
         else if(postfix[i] == '-'){
             conversion.push('-');
         }
+        else if(postfix[i] == '*'){
+            while(conversion.top() == '+' || '-'){
+                
+            }
+        }
     }
 }
