@@ -21,7 +21,7 @@ int main(){
             conversion.push('-');
         }
         else if(postfix[i] == '*'){
-            while(conversion.top() == '+' || '-'){
+            while(conversion.top() == '+' || conversion.top() == '-'){
                 cout << conversion.top();
                 conversion.pop();
             }
@@ -33,6 +33,17 @@ int main(){
                 conversion.pop();
             }
             conversion.push(postfix[i]);
+        }
+        else if(postfix[i] == ')'){
+            while(conversion.top() != '('){
+                cout << conversion.top();
+                conversion.pop();
+            }
+        }
+        else{
+            while(conversion.top() != '('){
+                cout << conversion.top();
+                conversion.pop();
         }
     }
 }
