@@ -41,9 +41,12 @@ int main(){
             }
         }
         else{
-            while(conversion.top() != '('){
+            cout << postfix[i];
+            }
+        
+    }
+    while(conversion.top() != '('){
                 cout << conversion.top();
                 conversion.pop();
-        }
-    }
+            } 
 }
