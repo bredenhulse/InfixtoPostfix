@@ -1,3 +1,8 @@
+/*
+Name: Breden Hulse
+Class: Computer Science 2
+Description: It will take an infix equation and will make it postfix
+*/
 #include <iostream>
 #include <stack>
 #include <string>
@@ -42,11 +47,12 @@ int main(){
         }
         else{
             cout << postfix[i];
-            }
+        }
         
     }
+    //Make sure that every character is printed except open paranthesis
     while(conversion.top() != '('){
-                cout << conversion.top();
-                conversion.pop();
-            } 
+        cout << conversion.top();
+        conversion.pop();
+    } 
 }
