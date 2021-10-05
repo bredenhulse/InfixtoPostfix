@@ -33,7 +33,7 @@ int main(){
             conversion.push(postfix[i]);
         }
         else if(postfix[i] == '/'){
-            while(conversion.top() == '+' || '-'){
+            while(conversion.top() == '+' || conversion.top() == '-'){
                 cout << conversion.top();
                 conversion.pop();
             }
